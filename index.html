@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+          </div>
+
+          <div class="container">
+            <div id="1" class="lessonChunk">
+                <div class="lesson">
+                    <p>Download MinGW</p>
+                    <p>First, you need to download MinGW, which is a minimalist development environment for native Microsoft Windows applications.</p>
+                    <a href="https://sourceforge.net/projects/mingw/">https://sourceforge.net/projects/mingw/</a>
+                </div>
+                <div class="answerContainer">
+                    <button onclick="backButtonClicked()" class="back">Back</button>
+                    <button onclick="nextButtonClicked()" class="next">Next</button>
+                </div>
+            </div>
+        
+            <div id="2" class="lessonChunk">
+                <div class="lesson">
+                    <p>Select the GCC g++ Package and Base</p>
+                    <div class="codeExample">
+                        <code><p>Select GCC g++ package</p></code>
+                        <code><p>Select base package</p></code>
+                    </div>
+                    <p>During the installation process, make sure to select the GCC g++ package and the base package. These packages are necessary for compiling C programs.</p>
+                </div>
+                <div class="answerContainer">
+                    <button onclick="backButtonClicked()" class="back">Back</button>
+                    <button onclick="nextButtonClicked()" class="next">Next</button>
+                </div>
+            </div>
+        
+            <div id="3" class="lessonChunk">
+                <div class="lesson">
+                    <p>Install and Apply Changes</p>
+                    <p>Click on the installation button and apply changes to complete the setup. This will install the necessary tools on your system.</p>
+                </div>
+                <div class="answerContainer">
+                    <button onclick="backButtonClicked()" class="back">Back</button>
+                    <button onclick="nextButtonClicked()" class="next">Next</button>
+                </div>
+            </div>
+        
+            <div id="4" class="lessonChunk">
+                <div class="lesson">
+                    <p>Set Environment Variables</p>
+                    <div class="codeExample">
+                        <code><p>Copy the bin folder path</p></code>
+                        <code><p>Set the path in environment variables</p></code>
+                    </div>
+                    <p>Go to the installation folder of MinGW, select its bin folder and copy its path. Then, type "environment variables" in the Windows search bar, click on Path within user variables or system variables, and add the copied path.</p>
+                </div>
+                <div class="answerContainer">
+                    <button onclick="backButtonClicked()" class="back">Back</button>
+                    <button onclick="nextButtonClicked()" class="next">Next</button>
+                </div>
+            </div>
+        
+            <div id="5" class="lessonChunk">
+                <div class="lesson">
+                    <p>Install Code Runner Extension</p>
+                    <p>In Visual Studio Code, install the Code Runner extension. This extension allows you to run your C code directly from the editor. After installation, restart Visual Studio Code to apply the changes.</p>
+                </div>
+                <div class="answerContainer">
+                    <button onclick="backButtonClicked()" class="back">Back</button>
+                    <button onclick="nextButtonClicked()" class="next">Next</button>
+                </div>
+            </div>
+        
+            <div id="6" class="lessonChunk">
+                <div class="lesson">
+                    <p>Basic C Program Format</p>
+                    <div class="codeExample">
+                        <code><p>#include &lt;stdio.h&gt;</p></code>
+                        <code><p>int main() {</p></code>
+                        <code><p>    printf("Hello, World!");</p></code>
+                        <code><p>    return 0;</p></code>
+                        <code><p>}</p></code>
+                    </div>
+                    <p>This is a basic C program that prints "Hello, World!" to the console. The <span class="keyword">#include &lt;stdio.h&gt;</span> directive includes the Standard Input Output library, which allows you to use the <span class="keyword">printf</span> function.</p>
+                </div>
+                <div class="answerContainer">
+                    <button onclick="backButtonClicked()" class="back">Back</button>
+                    <button onclick="nextButtonClicked()" class="next">Next</button>
+                </div>
+            </div>
+        
+        </div>
+        
+    
+    
+</main>
+</body>
+</html>
